@@ -1,0 +1,1 @@
+export { default as answers } from './answers';
