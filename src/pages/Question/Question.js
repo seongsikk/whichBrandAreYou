@@ -147,18 +147,30 @@ class Question extends Component {
 
     return (
       <div className="Question">
-        <header className="Question-header">
-          <p>
+        <div className="Question-header">
+          <div className="QuestionNumberHeader">
+            <p className="QuestionNumbers">
+              #{this.state.questionNumber+1}
+            </p>
+            <p className="QuestionNumbers">
+              {this.state.questionNumber+1}/12
+            </p>
+          </div>
+          <p className="Question-Text">
             {question}
           </p>
-          <img className= "Img" src={ imageUrl } height="30%" width="30%"/>
-          <Button onClick={() => { this.incrementQuestionNumber(); this.saveAnswer(answer1Mbti)}}>
-            {answer1}
-          </Button>
-          <Button onClick={() => { this.incrementQuestionNumber(); this.saveAnswer(answer2Mbti)}}>
-            {answer2}
-          </Button>
-        </header>
+          {/* <div className="Img-Container">
+            <img className="Img" src={imageUrl} />
+          </div> */}
+          <div className="Button-Container">
+            <Button color="primary" onClick={() => { this.incrementQuestionNumber(); this.saveAnswer(answer1Mbti)}}>
+              {answer1}
+            </Button>
+            <Button onClick={() => { this.incrementQuestionNumber(); this.saveAnswer(answer2Mbti)}}>
+              {answer2}
+            </Button>
+          </div>
+        </div>
       </div>
     );
   }

@@ -3,8 +3,9 @@
 }
 
 .Question-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,14 +14,49 @@
   color: white;
 }
 
-.MuiButtonBase-root.MuiButton-root.MuiButton-text {
-  background-color: #6772e5;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  padding: 7px 14px;
-  margin-bottom: 2.5%;
-  width: 30%;
+.Img-Container {
+  width: 50vh;
+  height: 50wh;
+  flex: 1;
 }
 
 .Img {
-  margin-bottom: 2.5%;
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+.QuestionNumberHeader {
+  margin: 0;
+  display: flex;
+  width: 50%;
+  flex: 1;
+  width: 100vw;
+}
+
+.QuestionNumbers {
+  flex: 1;
+  margin: 50px;
+  color: black;
+}
+
+.QuestionNumbersOutOf {
+  flex: 1;
+  margin: 50px;
+  color: grey;
+}
+
+.Question-Text {
+  flex: 2;
+  margin: 0;
+  width: 100vw;
+  color: black;
+}
+
+.Button-Container {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Button from '@material-ui/core/Button';
+import { Link } from "react-router-dom";
 
 import './Result.css';
 
@@ -8,25 +10,25 @@ class Result extends Component {
     super(props);
     this.state = {
       mbtiToCeleb: {
-        "INTJ": "지드래곤",
-        "INTP": "기안84",
-        "ENTJ": "지코",
-        "ENTP": "펭수",
+        "INTJ": "Chanel",
+        "INTP": "Hermes",
+        "ENTJ": "Rolex",
+        "ENTP": "Thom Browne",
 
-        "INFJ": "방탄소년단 정국",
-        "INFP": "아이유",
-        "ENFJ": "박준형",
-        "ENFP": "홍진영",
+        "INFJ": "Gucci",
+        "INFP": "YSL",
+        "ENFJ": "Louis Vuitton",
+        "ENFP": "Versace",
 
-        "ISTJ": "페이커",
-        "ISFJ": "태연",
-        "ESTJ": "박명수",
-        "ESFJ": "유재석",
+        "ISTJ": "Givenchy",
+        "ISFJ": "Tiffany & Co.",
+        "ESTJ": "Fendi",
+        "ESFJ": "Prada",
 
-        "ISTP": "김종민",
-        "ISFP": "민경훈",
-        "ESTP": "싸이",
-        "ESFP": "양세형",
+        "ISTP": "Burberry",
+        "ISFP": "Dior",
+        "ESTP": "Balenciaga",
+        "ESFP": "Valentino",
       }
     }
   }
@@ -74,6 +76,13 @@ class Result extends Component {
           <p>
             {this.getCeleb()}
           </p>
+          <div className="Button-container">
+            <Link to="/">
+              <Button>
+                  다시하기!
+              </Button>
+            </Link>
+          </div>
         </header>
       </div>
     );
