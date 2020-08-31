@@ -21,6 +21,11 @@ class Question extends Component {
       questionNumber: 0,
       questions: [
         {
+          "question": "당신의 성별은 무엇인가요?",
+          "answer1": "저는 남자입니다.",
+          "answer2": "저는 여자입니다.",
+        },
+        {
           "question": "시험 공부를 할때 나는",
           "answer1": "계획을 짜서 미리 미리 공부하는 편이다",
           "answer2": "시험 직전에 벼락치기 하는 편이다",
