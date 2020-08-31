@@ -137,7 +137,7 @@ class Question extends Component {
   }
 
   render() {
-    if (this.state.questionNumber === 12) {
+    if (this.state.questionNumber === 13) {
       return (
         <Redirect to="/result" />
       )
@@ -158,7 +158,7 @@ class Question extends Component {
               #{this.state.questionNumber+1}
             </p>
             <p className="QuestionNumbers">
-              {this.state.questionNumber+1}/12
+              {this.state.questionNumber+1}/13
             </p>
           </div>
           <p className="Question-Text">
