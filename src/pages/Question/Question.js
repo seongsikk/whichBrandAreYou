@@ -26,11 +26,11 @@ class Question extends Component {
           "answer2": "저는 여자입니다.",
         },
         {
-          "question": "시험 공부를 할때 나는",
-          "answer1": "계획을 짜서 미리 미리 공부하는 편이다",
-          "answer2": "시험 직전에 벼락치기 하는 편이다",
-          "answer1Mbti": "J",
-          "answer2Mbti": "P",
+          "question": "3년 교제한 애인과 오늘 헤어진 당신. 여러가지 기분이 함께 몰려오는데... 오늘 밤 당신은 무엇을 할 것인가?",
+          "answer1": "씁쓸하니 집에서 조용시 시간을 보냅니다.",
+          "answer2": "우선 집 밖을 나가 친구든 새로운 인연이든 누구를 만납니다.",
+          "answer1Mbti": "I",
+          "answer2Mbti": "E",
           "image": testImage,
         },
         {
