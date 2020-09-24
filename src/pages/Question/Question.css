@@ -1,20 +1,23 @@
 .Question {
   text-align: center;
+  /* transform: translate3d(-1500px, 0px, 0px);
+  transition: all 0ms ease 0s; */
 }
 
 .Question-header {
   background-color: white;
   min-height: 100vh;
   max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: block;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
   color: white;
+  padding: 30px 0px;
 }
 
-.Img-Container {
+/* .Img-Container {
   width: 50vh;
   height: 50wh;
   flex: 1;
@@ -24,39 +27,72 @@
   object-fit: scale-down;
   width: 100%;
   height: 100%;
-}
+} */
 
 .QuestionNumberHeader {
-  margin: 0;
-  display: flex;
-  width: 50%;
-  flex: 1;
-  width: 100vw;
+  /* margin: 0; */
+  text-align: center;
 }
 
 .QuestionNumbers {
-  flex: 1;
-  margin: 50px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  /* flex: 1;
+  margin: 10px; */
   color: black;
+  font-family: 'MapoFlowerIsland';
+  font-size: 26px;
 }
 
 .QuestionNumbersOutOf {
-  flex: 1;
-  margin: 50px;
-  color: grey;
+  display: inline-block;
+  margin-left: 50%;
+  color: rgba(0,0,0,0.6);
+  /* margin: 10px; */
+  color: #cdcdcd;
+  font-size: 16px;
 }
 
 .Question-Text {
-  flex: 2;
-  margin: 0;
-  width: 100vw;
+  /* flex: 2; */
+  margin: 30px 10%;
+  /* width: 100vw; */
   color: black;
+  font-family: 'MapoFlowerIsland';
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.65;
+  text-align: center;
+  height: 160px;
 }
 
 .Button-Container {
-  flex: 6;
+  /* flex: 6;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100vw;
+  align-items: center; */
+
+  width: 260px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 375px) {
+  .QuestionNumbersOutOf {
+    margin-left: 200px;
+  }
 }

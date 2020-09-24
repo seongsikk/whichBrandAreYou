@@ -30,13 +30,30 @@ a {
   background-color: #ff5c5c;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   padding: 20px 20px;
-  margin-bottom: 2.5%;
-  width: 60%;
+  margin-bottom: 20px;
+  width: 100%;
   color: white;
+
+  line-height: 1.4;
+  height: 100px;
+  border-radius: 10px;
 }
 
+
+
 .Button-container {
-  width: 50%;
+  width: 260px;
   margin: 10px;
 }
 
+@media (min-width: 375px) {
+  /* .MuiButtonBase-root.MuiButton-root.MuiButton-text:hover {
+    background-color: #ffffff;
+    color: #ff5c5c;
+  } */
+}
+
+@font-face { font-family: 'MapoFlowerIsland'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); 
+  font-weight: normal; font-style: normal; }
+  

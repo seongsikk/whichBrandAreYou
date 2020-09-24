@@ -79,7 +79,7 @@ class Question extends Component {
           "question": "끝이 보이지 않는 야근. \
           눈 앞에는 묵묵히 일에 몰입해있는 직장 상사. \
           어느덧 저녁 9시 17분. 보고를 올린 후 당신이 상사로부터 듣고싶은 대답은?",
-          "answer1": "많이 피곤하지? 늘 고마워. 얼른 집에가서 쉬어.",
+          "answer1": "많이 피곤하지? (웃으며 비타500을 건네준다.) 늘 고마워. 얼른 집에가서 쉬어.",
           "answer2": "데이터 값 정리가 완벽한데? 수고했어. 얼른 퇴근해",
           "answer1Mbti": "F",
           "answer2Mbti": "T",
@@ -176,12 +176,12 @@ class Question extends Component {
     let imageUrl = this.state.questions[this.state.questionNumber].image;
 
     return (
-      <div className="Question" class='fade-in'>
+      <div className="Question">
         <div className="Question-header">
           <div className="QuestionNumberHeader">
-            <h3 className="QuestionNumbers">
+            <p className="QuestionNumbers">
               #{this.state.questionNumber+1}
-            </h3>
+            </p>
             <p className="QuestionNumbersOutOf">
               {this.state.questionNumber+1}/13
             </p>
